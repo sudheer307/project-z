@@ -1,0 +1,503 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fmodern\fcharset0 Lucida Console;}{\f1\fmodern Lucida Console;}{\f2\fnil\fcharset0 Calibri;}}
+{\colortbl ;\red255\green0\blue0;\red0\green191\blue0;\red191\green0\blue191;\red191\green191\blue0;\red0\green0\blue255;\red0\green191\blue191;\red96\green96\blue255;\red191\green0\blue0;\red64\green255\blue255;\red64\green255\blue64;\red255\green64\blue64;}
+{\*\generator Riched20 10.0.17763}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\cf1\b\f0\fs36\lang16393 branches:\par
+------------------------------\f1\lang9\par
+\cf2\fs32\par
+sudhe@DESKTOP-OHIM603 \cf3 MINGW64 \cf4 ~/Desktop\par
+\cf0 $ git clone {{\field{\*\fldinst{HYPERLINK https://github.com/sudheer307/project-z.git }}{\fldrslt{https://github.com/sudheer307/project-z.git\ul0\cf0}}}}\f1\fs32\par
+Cloning into 'project-z'...\par
+warning: You appear to have cloned an empty repository.\par
+\par
+\cf2 sudhe@DESKTOP-OHIM603 \cf3 MINGW64 \cf4 ~/Desktop\par
+\cf0 $ cd project-z/\par
+\par
+\cf2 sudhe@DESKTOP-OHIM603 \cf3 MINGW64 \cf4 ~/Desktop/project-z\cf6  (master)\par
+\cf0 $ ls\par
+\par
+\cf2 sudhe@DESKTOP-OHIM603 \cf3 MINGW64 \cf4 ~/Desktop/project-z\cf6  (master)\par
+\cf0 $ ls -a\par
+\cf7 .\cf0 /  \cf7 ..\cf0 /  \cf7 .git\cf0 /\par
+\par
+\cf2 sudhe@DESKTOP-OHIM603 \cf3 MINGW64 \cf4 ~/Desktop/project-z\cf6  (master)\par
+\cf0 $ cat > index.html\par
+<h1> my name is sudheer </h1>\par
+\par
+\cf2 sudhe@DESKTOP-OHIM603 \cf3 MINGW64 \cf4 ~/Desktop/project-z\cf6  (master)\par
+\cf0 $ git status\par
+On branch master\par
+\par
+No commits yet\par
+\par
+Untracked files:\par
+  (use "git add <file>..." to include in what will be committed)\par
+\par
+        \cf8 index.html\par
+\par
+\cf0 nothing added to commit but untracked files present (use "git add" to track)\par
+\par
+\cf2 sudhe@DESKTOP-OHIM603 \cf3 MINGW64 \cf4 ~/Desktop/project-z\cf6  (master)\par
+\cf0 $ git add .\par
+warning: LF will be replaced by CRLF in index.html.\par
+The file will have its original line endings in your working directory\par
+\par
+\cf2 sudhe@DESKTOP-OHIM603 \cf3 MINGW64 \cf4 ~/Desktop/project-z\cf6  (master)\par
+\cf0 $ git status\par
+On branch master\par
+\par
+No commits yet\par
+\par
+Changes to be committed:\par
+  (use "git rm --cached <file>..." to unstage)\par
+\par
+        \cf2 new file:   index.html\par
+\par
+\par
+sudhe@DESKTOP-OHIM603 \cf3 MINGW64 \cf4 ~/Desktop/project-z\cf6  (master)\par
+\cf0 $ git commit -m "1"\par
+[master (root-commit) e329016] 1\par
+ 1 file changed, 1 insertion(+)\par
+ create mode 100644 index.html\par
+\par
+\cf2 sudhe@DESKTOP-OHIM603 \cf3 MINGW64 \cf4 ~/Desktop/project-z\cf6  (master)\par
+\cf0 $ git status\par
+On branch master\par
+Your branch is based on 'origin/master', but the upstream is gone.\par
+  (use "git branch --unset-upstream" to fixup)\par
+\par
+nothing to commit, working tree clean\par
+\par
+\cf2 sudhe@DESKTOP-OHIM603 \cf3 MINGW64 \cf4 ~/Desktop/project-z\cf6  (master)\par
+\cf0 $ git push\par
+Enumerating objects: 3, done.\par
+Counting objects: 100% (3/3), done.\par
+Writing objects: 100% (3/3), 239 bytes | 119.00 KiB/s, done.\par
+Total 3 (delta 0), reused 0 (delta 0)\par
+To {{\field{\*\fldinst{HYPERLINK https://github.com/sudheer307/project-z.git }}{\fldrslt{https://github.com/sudheer307/project-z.git\ul0\cf0}}}}\f1\fs32\par
+ * [new branch]      master -> master\par
+\par
+\cf2 sudhe@DESKTOP-OHIM603 \cf3 MINGW64 \cf4 ~/Desktop/project-z\cf6  (master)\par
+\cf0 $ ls\par
+index.html\par
+\par
+\cf2 sudhe@DESKTOP-OHIM603 \cf3 MINGW64 \cf4 ~/Desktop/project-z\cf6  (master)\par
+\cf0 $ git log\par
+\cf4 commit e32901622c8feb16bfb0d5916444c079341406fe (\cf9 HEAD -> \cf10 master\cf4 , \cf11 origin/master\cf4 )\par
+\cf0 Author: sudheer <sudheer.ganatech308@gmail.com>\par
+Date:   Mon Feb 11 08:56:13 2019 +0530\par
+\par
+    1\par
+\par
+\cf2 sudhe@DESKTOP-OHIM603 \cf3 MINGW64 \cf4 ~/Desktop/project-z\cf6  (master)\par
+\cf0 $ git branch\par
+* \cf2 master\par
+\par
+sudhe@DESKTOP-OHIM603 \cf3 MINGW64 \cf4 ~/Desktop/project-z\cf6  (master)\par
+\cf0 $ git branch raja\par
+\par
+\cf2 sudhe@DESKTOP-OHIM603 \cf3 MINGW64 \cf4 ~/Desktop/project-z\cf6  (master)\par
+\cf0 $ git branch\par
+* \cf2 master\par
+\cf0   raja\par
+\par
+\cf2 sudhe@DESKTOP-OHIM603 \cf3 MINGW64 \cf4 ~/Desktop/project-z\cf6  (master)\par
+\cf0 $ git checkout raja\par
+Switched to branch 'raja'\par
+\par
+\cf2 sudhe@DESKTOP-OHIM603 \cf3 MINGW64 \cf4 ~/Desktop/project-z\cf6  (raja)\par
+\cf0 $ git branch\par
+  master\par
+* \cf2 raja\par
+\par
+sudhe@DESKTOP-OHIM603 \cf3 MINGW64 \cf4 ~/Desktop/project-z\cf6  (raja)\par
+\cf0 $ ls\par
+index.html\par
+\par
+\cf2 sudhe@DESKTOP-OHIM603 \cf3 MINGW64 \cf4 ~/Desktop/project-z\cf6  (raja)\par
+\cf0 $ git log\par
+\cf4 commit e32901622c8feb16bfb0d5916444c079341406fe (\cf9 HEAD -> \cf10 raja\cf4 , \cf11 origin/master\cf4 , \cf10 master\cf4 )\par
+\cf0 Author: sudheer <sudheer.ganatech308@gmail.com>\par
+Date:   Mon Feb 11 08:56:13 2019 +0530\par
+\par
+    1\par
+\par
+\cf2 sudhe@DESKTOP-OHIM603 \cf3 MINGW64 \cf4 ~/Desktop/project-z\cf6  (raja)\par
+\cf0 $ git status\par
+On branch raja\par
+nothing to commit, working tree clean\par
+\par
+\cf2 sudhe@DESKTOP-OHIM603 \cf3 MINGW64 \cf4 ~/Desktop/project-z\cf6  (raja)\par
+\cf0 $ touch f1 f2 f3\par
+\par
+\cf2 sudhe@DESKTOP-OHIM603 \cf3 MINGW64 \cf4 ~/Desktop/project-z\cf6  (raja)\par
+\cf0 $ git status\par
+On branch raja\par
+Untracked files:\par
+  (use "git add <file>..." to include in what will be committed)\par
+\par
+        \cf8 f1\par
+\cf0         \cf8 f2\par
+\cf0         \cf8 f3\par
+\par
+\cf0 nothing added to commit but untracked files present (use "git add" to track)\par
+\par
+\cf2 sudhe@DESKTOP-OHIM603 \cf3 MINGW64 \cf4 ~/Desktop/project-z\cf6  (raja)\par
+\cf0 $ git add .\par
+\par
+\cf2 sudhe@DESKTOP-OHIM603 \cf3 MINGW64 \cf4 ~/Desktop/project-z\cf6  (raja)\par
+\cf0 $ git status\par
+On branch raja\par
+Changes to be committed:\par
+  (use "git reset HEAD <file>..." to unstage)\par
+\par
+        \cf2 new file:   f1\par
+\cf0         \cf2 new file:   f2\par
+\cf0         \cf2 new file:   f3\par
+\par
+\par
+sudhe@DESKTOP-OHIM603 \cf3 MINGW64 \cf4 ~/Desktop/project-z\cf6  (raja)\par
+\cf0 $ git commit -m "2"\par
+[raja 7517184] 2\par
+ 3 files changed, 0 insertions(+), 0 deletions(-)\par
+ create mode 100644 f1\par
+ create mode 100644 f2\par
+ create mode 100644 f3\par
+\par
+\cf2 sudhe@DESKTOP-OHIM603 \cf3 MINGW64 \cf4 ~/Desktop/project-z\cf6  (raja)\par
+\cf0 $ git push origin raja\par
+Enumerating objects: 4, done.\par
+Counting objects: 100% (4/4), done.\par
+Delta compression using up to 2 threads\par
+Compressing objects: 100% (2/2), done.\par
+Writing objects: 100% (3/3), 271 bytes | 135.00 KiB/s, done.\par
+Total 3 (delta 0), reused 0 (delta 0)\par
+remote:\par
+remote: Create a pull request for 'raja' on GitHub by visiting:\par
+remote:      {{\field{\*\fldinst{HYPERLINK https://github.com/sudheer307/project-z/pull/new/raja }}{\fldrslt{https://github.com/sudheer307/project-z/pull/new/raja\ul0\cf0}}}}\f1\fs32\par
+remote:\par
+To {{\field{\*\fldinst{HYPERLINK https://github.com/sudheer307/project-z.git }}{\fldrslt{https://github.com/sudheer307/project-z.git\ul0\cf0}}}}\f1\fs32\par
+ * [new branch]      raja -> raja\par
+\par
+\cf2 sudhe@DESKTOP-OHIM603 \cf3 MINGW64 \cf4 ~/Desktop/project-z\cf6  (raja)\par
+\cf0 $ git log\par
+\cf4 commit 7517184553e82330d3000ab29ac791cb99c2aad7 (\cf9 HEAD -> \cf10 raja\cf4 , \cf11 origin/raja\cf4 )\par
+\cf0 Author: sudheer <sudheer.ganatech308@gmail.com>\par
+Date:   Mon Feb 11 09:00:31 2019 +0530\par
+\par
+    2\par
+\par
+\cf4 commit e32901622c8feb16bfb0d5916444c079341406fe (\cf11 origin/master\cf4 , \cf10 master\cf4 )\par
+\cf0 Author: sudheer <sudheer.ganatech308@gmail.com>\par
+Date:   Mon Feb 11 08:56:13 2019 +0530\par
+\par
+    1\par
+\par
+\cf2 sudhe@DESKTOP-OHIM603 \cf3 MINGW64 \cf4 ~/Desktop/project-z\cf6  (raja)\par
+\cf0 $ git checkout master\par
+Switched to branch 'master'\par
+Your branch is up to date with 'origin/master'.\par
+\par
+\cf2 sudhe@DESKTOP-OHIM603 \cf3 MINGW64 \cf4 ~/Desktop/project-z\cf6  (master)\par
+\cf0 $ ls\par
+index.html\par
+\par
+\cf2 sudhe@DESKTOP-OHIM603 \cf3 MINGW64 \cf4 ~/Desktop/project-z\cf6  (master)\par
+\cf0 $ git merge raja\par
+Updating e329016..7517184\par
+Fast-forward\par
+ f1 | 0\par
+ f2 | 0\par
+ f3 | 0\par
+ 3 files changed, 0 insertions(+), 0 deletions(-)\par
+ create mode 100644 f1\par
+ create mode 100644 f2\par
+ create mode 100644 f3\par
+\par
+\cf2 sudhe@DESKTOP-OHIM603 \cf3 MINGW64 \cf4 ~/Desktop/project-z\cf6  (master)\par
+\cf0 $ ls\par
+f1  f2  f3  index.html\par
+\par
+\cf2 sudhe@DESKTOP-OHIM603 \cf3 MINGW64 \cf4 ~/Desktop/project-z\cf6  (master)\par
+\cf0 $ git log\par
+\cf4 commit 7517184553e82330d3000ab29ac791cb99c2aad7 (\cf9 HEAD -> \cf10 master\cf4 , \cf11 origin/raja\cf4 , \cf10 raja\cf4 )\par
+\cf0 Author: sudheer <sudheer.ganatech308@gmail.com>\par
+Date:   Mon Feb 11 09:00:31 2019 +0530\par
+\par
+    2\par
+\par
+\cf4 commit e32901622c8feb16bfb0d5916444c079341406fe (\cf11 origin/master\cf4 )\par
+\cf0 Author: sudheer <sudheer.ganatech308@gmail.com>\par
+Date:   Mon Feb 11 08:56:13 2019 +0530\par
+\par
+    1\par
+\par
+\cf2 sudhe@DESKTOP-OHIM603 \cf3 MINGW64 \cf4 ~/Desktop/project-z\cf6  (master)\par
+\cf0 $ git branch reddy\par
+\par
+\cf2 sudhe@DESKTOP-OHIM603 \cf3 MINGW64 \cf4 ~/Desktop/project-z\cf6  (master)\par
+\cf0 $ git branch\par
+* \cf2 master\par
+\cf0   raja\par
+  reddy\par
+\par
+\cf2 sudhe@DESKTOP-OHIM603 \cf3 MINGW64 \cf4 ~/Desktop/project-z\cf6  (master)\par
+\cf0 $ git checkout reddy\par
+Switched to branch 'reddy'\par
+\par
+\cf2 sudhe@DESKTOP-OHIM603 \cf3 MINGW64 \cf4 ~/Desktop/project-z\cf6  (reddy)\par
+\cf0 $ git branch\par
+  master\par
+  raja\par
+* \cf2 reddy\par
+\par
+sudhe@DESKTOP-OHIM603 \cf3 MINGW64 \cf4 ~/Desktop/project-z\cf6  (reddy)\par
+\cf0 $ ls\par
+f1  f2  f3  index.html\par
+\par
+\cf2 sudhe@DESKTOP-OHIM603 \cf3 MINGW64 \cf4 ~/Desktop/project-z\cf6  (reddy)\par
+\cf0 $ git log\par
+\cf4 commit 7517184553e82330d3000ab29ac791cb99c2aad7 (\cf9 HEAD -> \cf10 reddy\cf4 , \cf11 origin/raja\cf4 , \cf10 raja\cf4 , \cf10 master\cf4 )\par
+\cf0 Author: sudheer <sudheer.ganatech308@gmail.com>\par
+Date:   Mon Feb 11 09:00:31 2019 +0530\par
+\par
+    2\par
+\par
+\cf4 commit e32901622c8feb16bfb0d5916444c079341406fe (\cf11 origin/master\cf4 )\par
+\cf0 Author: sudheer <sudheer.ganatech308@gmail.com>\par
+Date:   Mon Feb 11 08:56:13 2019 +0530\par
+\par
+    1\par
+\par
+\cf2 sudhe@DESKTOP-OHIM603 \cf3 MINGW64 \cf4 ~/Desktop/project-z\cf6  (reddy)\par
+\cf0 $ touch s1 s2 s3 s4\par
+\par
+\cf2 sudhe@DESKTOP-OHIM603 \cf3 MINGW64 \cf4 ~/Desktop/project-z\cf6  (reddy)\par
+\cf0 $ git status\par
+On branch reddy\par
+Untracked files:\par
+  (use "git add <file>..." to include in what will be committed)\par
+\par
+        \cf8 s1\par
+\cf0         \cf8 s2\par
+\cf0         \cf8 s3\par
+\cf0         \cf8 s4\par
+\par
+\cf0 nothing added to commit but untracked files present (use "git add" to track)\par
+\par
+\cf2 sudhe@DESKTOP-OHIM603 \cf3 MINGW64 \cf4 ~/Desktop/project-z\cf6  (reddy)\par
+\cf0 $ git add .\par
+\par
+\cf2 sudhe@DESKTOP-OHIM603 \cf3 MINGW64 \cf4 ~/Desktop/project-z\cf6  (reddy)\par
+\cf0 $ git commit -m "3"\par
+[reddy e5911f1] 3\par
+ 4 files changed, 0 insertions(+), 0 deletions(-)\par
+ create mode 100644 s1\par
+ create mode 100644 s2\par
+ create mode 100644 s3\par
+ create mode 100644 s4\par
+\par
+\cf2 sudhe@DESKTOP-OHIM603 \cf3 MINGW64 \cf4 ~/Desktop/project-z\cf6  (reddy)\par
+\cf0 $ git status\par
+On branch reddy\par
+nothing to commit, working tree clean\par
+\par
+\cf2 sudhe@DESKTOP-OHIM603 \cf3 MINGW64 \cf4 ~/Desktop/project-z\cf6  (reddy)\par
+\cf0 $ git push origin reddy\par
+Enumerating objects: 3, done.\par
+Counting objects: 100% (3/3), done.\par
+Delta compression using up to 2 threads\par
+Compressing objects: 100% (2/2), done.\par
+Writing objects: 100% (2/2), 278 bytes | 92.00 KiB/s, done.\par
+Total 2 (delta 0), reused 0 (delta 0)\par
+remote:\par
+remote: Create a pull request for 'reddy' on GitHub by visiting:\par
+remote:      {{\field{\*\fldinst{HYPERLINK https://github.com/sudheer307/project-z/pull/new/reddy }}{\fldrslt{https://github.com/sudheer307/project-z/pull/new/reddy\ul0\cf0}}}}\f1\fs32\par
+remote:\par
+To {{\field{\*\fldinst{HYPERLINK https://github.com/sudheer307/project-z.git }}{\fldrslt{https://github.com/sudheer307/project-z.git\ul0\cf0}}}}\f1\fs32\par
+ * [new branch]      reddy -> reddy\par
+\par
+\cf2 sudhe@DESKTOP-OHIM603 \cf3 MINGW64 \cf4 ~/Desktop/project-z\cf6  (reddy)\par
+\cf0 $ ls\par
+f1  f2  f3  index.html  s1  s2  s3  s4\par
+\par
+\cf2 sudhe@DESKTOP-OHIM603 \cf3 MINGW64 \cf4 ~/Desktop/project-z\cf6  (reddy)\par
+\cf0 $ git checkout master\par
+Switched to branch 'master'\par
+Your branch is ahead of 'origin/master' by 1 commit.\par
+  (use "git push" to publish your local commits)\par
+\par
+\cf2 sudhe@DESKTOP-OHIM603 \cf3 MINGW64 \cf4 ~/Desktop/project-z\cf6  (master)\par
+\cf0 $ ls\par
+f1  f2  f3  index.html\par
+\par
+\cf2 sudhe@DESKTOP-OHIM603 \cf3 MINGW64 \cf4 ~/Desktop/project-z\cf6  (master)\par
+\cf0 $ git merge reddy\par
+Updating 7517184..e5911f1\par
+Fast-forward\par
+ s1 | 0\par
+ s2 | 0\par
+ s3 | 0\par
+ s4 | 0\par
+ 4 files changed, 0 insertions(+), 0 deletions(-)\par
+ create mode 100644 s1\par
+ create mode 100644 s2\par
+ create mode 100644 s3\par
+ create mode 100644 s4\par
+\par
+\cf2 sudhe@DESKTOP-OHIM603 \cf3 MINGW64 \cf4 ~/Desktop/project-z\cf6  (master)\par
+\cf0 $ ls\par
+f1  f2  f3  index.html  s1  s2  s3  s4\par
+\par
+\cf2 sudhe@DESKTOP-OHIM603 \cf3 MINGW64 \cf4 ~/Desktop/project-z\cf6  (master)\par
+\cf0 $ git log\par
+\cf4 commit e5911f13c550ba9b888c59acb6a61a7ac19b611b (\cf9 HEAD -> \cf10 master\cf4 , \cf11 origin/reddy\cf4 , \cf10 reddy\cf4 )\par
+\cf0 Author: sudheer <sudheer.ganatech308@gmail.com>\par
+Date:   Mon Feb 11 09:06:13 2019 +0530\par
+\par
+    3\par
+\par
+\cf4 commit 7517184553e82330d3000ab29ac791cb99c2aad7 (\cf11 origin/raja\cf4 , \cf10 raja\cf4 )\par
+\cf0 Author: sudheer <sudheer.ganatech308@gmail.com>\par
+Date:   Mon Feb 11 09:00:31 2019 +0530\par
+\par
+    2\par
+\par
+\cf4 commit e32901622c8feb16bfb0d5916444c079341406fe (\cf11 origin/master\cf4 )\par
+\cf0 Author: sudheer <sudheer.ganatech308@gmail.com>\par
+Date:   Mon Feb 11 08:56:13 2019 +0530\par
+\par
+    1\par
+\par
+\cf2 sudhe@DESKTOP-OHIM603 \cf3 MINGW64 \cf4 ~/Desktop/project-z\cf6  (master)\par
+\cf0 $ git checkout raja\par
+Switched to branch 'raja'\par
+\par
+\cf2 sudhe@DESKTOP-OHIM603 \cf3 MINGW64 \cf4 ~/Desktop/project-z\cf6  (raja)\par
+\cf0 $ git merge reddy\par
+Updating 7517184..e5911f1\par
+Fast-forward\par
+ s1 | 0\par
+ s2 | 0\par
+ s3 | 0\par
+ s4 | 0\par
+ 4 files changed, 0 insertions(+), 0 deletions(-)\par
+ create mode 100644 s1\par
+ create mode 100644 s2\par
+ create mode 100644 s3\par
+ create mode 100644 s4\par
+\par
+\cf2 sudhe@DESKTOP-OHIM603 \cf3 MINGW64 \cf4 ~/Desktop/project-z\cf6  (raja)\par
+\cf0 $ ls\par
+f1  f2  f3  index.html  s1  s2  s3  s4\par
+\par
+\cf2 sudhe@DESKTOP-OHIM603 \cf3 MINGW64 \cf4 ~/Desktop/project-z\cf6  (raja)\par
+\cf0 $ git checkout master\par
+Switched to branch 'master'\par
+Your branch is ahead of 'origin/master' by 2 commits.\par
+  (use "git push" to publish your local commits)\par
+\par
+\cf2 sudhe@DESKTOP-OHIM603 \cf3 MINGW64 \cf4 ~/Desktop/project-z\cf6  (master)\par
+\cf0 $ ls\par
+f1  f2  f3  index.html  s1  s2  s3  s4\par
+\par
+\cf2 sudhe@DESKTOP-OHIM603 \cf3 MINGW64 \cf4 ~/Desktop/project-z\cf6  (master)\par
+\cf0 $ git branch\par
+* \cf2 master\par
+\cf0   raja\par
+  reddy\par
+\par
+\cf2 sudhe@DESKTOP-OHIM603 \cf3 MINGW64 \cf4 ~/Desktop/project-z\cf6  (master)\par
+\cf0 $ git branch -m raja rajasekhar\par
+\par
+\cf2 sudhe@DESKTOP-OHIM603 \cf3 MINGW64 \cf4 ~/Desktop/project-z\cf6  (master)\par
+\cf0 $ git branch\par
+* \cf2 master\par
+\cf0   rajasekhar\par
+  reddy\par
+\par
+\cf2 sudhe@DESKTOP-OHIM603 \cf3 MINGW64 \cf4 ~/Desktop/project-z\cf6  (master)\par
+\cf0 $ git checkout rajasekhar\par
+Switched to branch 'rajasekhar'\par
+\par
+\cf2 sudhe@DESKTOP-OHIM603 \cf3 MINGW64 \cf4 ~/Desktop/project-z\cf6  (rajasekhar)\par
+\cf0 $ ls\par
+f1  f2  f3  index.html  s1  s2  s3  s4\par
+\par
+\cf2 sudhe@DESKTOP-OHIM603 \cf3 MINGW64 \cf4 ~/Desktop/project-z\cf6  (rajasekhar)\par
+\cf0 $ git push origin rajasekhar\par
+Enumerating objects: 8, done.\par
+Counting objects: 100% (8/8), done.\par
+Delta compression using up to 2 threads\par
+Compressing objects: 100% (5/5), done.\par
+Writing objects: 100% (8/8), 658 bytes | 164.00 KiB/s, done.\par
+Total 8 (delta 1), reused 0 (delta 0)\par
+remote: Resolving deltas: 100% (1/1), done.\par
+remote:\par
+remote: Create a pull request for 'rajasekhar' on GitHub by visiting:\par
+remote:      {{\field{\*\fldinst{HYPERLINK https://github.com/sudheer307/project-z/pull/new/rajasekhar }}{\fldrslt{https://github.com/sudheer307/project-z/pull/new/rajasekhar\ul0\cf0}}}}\f1\fs32\par
+remote:\par
+To {{\field{\*\fldinst{HYPERLINK https://github.com/sudheer307/project-z.git }}{\fldrslt{https://github.com/sudheer307/project-z.git\ul0\cf0}}}}\f1\fs32\par
+ * [new branch]      rajasekhar -> rajasekhar\par
+\par
+\cf2 sudhe@DESKTOP-OHIM603 \cf3 MINGW64 \cf4 ~/Desktop/project-z\cf6  (rajasekhar)\par
+\cf0 $ git checkout master\par
+Switched to branch 'master'\par
+Your branch is ahead of 'origin/master' by 2 commits.\par
+  (use "git push" to publish your local commits)\par
+\par
+\cf2 sudhe@DESKTOP-OHIM603 \cf3 MINGW64 \cf4 ~/Desktop/project-z\cf6  (master)\par
+\cf0 $ git branch -d reddy\par
+Deleted branch reddy (was e5911f1).\par
+\par
+\cf2 sudhe@DESKTOP-OHIM603 \cf3 MINGW64 \cf4 ~/Desktop/project-z\cf6  (master)\par
+\cf0 $ git branch -d rajasekhar\par
+Deleted branch rajasekhar (was e5911f1).\par
+\par
+\cf2 sudhe@DESKTOP-OHIM603 \cf3 MINGW64 \cf4 ~/Desktop/project-z\cf6  (master)\par
+\cf0 $ git checkout -b rajareddy\par
+Switched to a new branch 'rajareddy'\par
+\par
+\cf2 sudhe@DESKTOP-OHIM603 \cf3 MINGW64 \cf4 ~/Desktop/project-z\cf6  (rajareddy)\par
+\cf0 $ git branch\par
+  master\par
+* \cf2 rajareddy\par
+\par
+sudhe@DESKTOP-OHIM603 \cf3 MINGW64 \cf4 ~/Desktop/project-z\cf6  (rajareddy)\par
+\cf0 $ git checkout rajareddy\par
+Already on 'rajareddy'\par
+\par
+\cf2 sudhe@DESKTOP-OHIM603 \cf3 MINGW64 \cf4 ~/Desktop/project-z\cf6  (rajareddy)\par
+\cf0 $ ls\par
+f1  f2  f3  index.html  s1  s2  s3  s4\par
+\par
+\cf2 sudhe@DESKTOP-OHIM603 \cf3 MINGW64 \cf4 ~/Desktop/project-z\cf6  (rajareddy)\par
+\cf0 $ git push origin rajareddy\par
+Total 0 (delta 0), reused 0 (delta 0)\par
+remote:\par
+remote: Create a pull request for 'rajareddy' on GitHub by visiting:\par
+remote:      {{\field{\*\fldinst{HYPERLINK https://github.com/sudheer307/project-z/pull/new/rajareddy }}{\fldrslt{https://github.com/sudheer307/project-z/pull/new/rajareddy\ul0\cf0}}}}\f1\fs32\par
+remote:\par
+To {{\field{\*\fldinst{HYPERLINK https://github.com/sudheer307/project-z.git }}{\fldrslt{https://github.com/sudheer307/project-z.git\ul0\cf0}}}}\f1\fs32\par
+ * [new branch]      rajareddy -> rajareddy\par
+\par
+\cf2 sudhe@DESKTOP-OHIM603 \cf3 MINGW64 \cf4 ~/Desktop/project-z\cf6  (rajareddy)\par
+\cf0 $ git branch -D rajareddy\par
+error: Cannot delete branch 'rajareddy' checked out at 'C:/Users/sudhe/Desktop/project-z'\par
+\par
+\cf2 sudhe@DESKTOP-OHIM603 \cf3 MINGW64 \cf4 ~/Desktop/project-z\cf6  (rajareddy)\par
+\cf0 $ git branch -D master\par
+Deleted branch master (was e5911f1).\par
+\par
+\cf2 sudhe@DESKTOP-OHIM603 \cf3 MINGW64 \cf4 ~/Desktop/project-z\cf6  (rajareddy)\par
+\cf0 $ git checkout -b master\par
+Switched to a new branch 'master'\par
+\par
+\cf2 sudhe@DESKTOP-OHIM603 \cf3 MINGW64 \cf4 ~/Desktop/project-z\cf6  (master)\par
+\cf0 $ ls\par
+f1  f2  f3  index.html  s1  s2  s3  s4\par
+\par
+\cf2 sudhe@DESKTOP-OHIM603 \cf3 MINGW64 \cf4 ~/Desktop/project-z\cf6  (master)\par
+\cf0 $\par
+\f2\par
+}
+ 
